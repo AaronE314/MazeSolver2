@@ -31,15 +31,16 @@ class Solver{
             Dead.set(i,next);
             loop++;
           } else {
-            Dead.remove(i);
+            //Dead.remove(i);
           }
         }
       }
     }
     
     if(loop == 0){
+      //println("Switching");
       tracing = true;
-      filling = false;
+      //filling = false;
       current = mazeStart;
     }
     
