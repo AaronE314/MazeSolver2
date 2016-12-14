@@ -1,4 +1,4 @@
-final static int SIZE = 40;
+final static int SIZE = 50;
 int cols, rows;
 ArrayList<Cell> grid;
 ArrayList<Cell> stack;

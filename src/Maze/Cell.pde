@@ -18,17 +18,16 @@ class Cell {
     x = i*SIZE;
     y = j*SIZE;
     stroke(255);
-    //strokeWeight(4);
     if(walls[0]){line(x, y, x+SIZE, y);}
     if(walls[1]){line(x+SIZE, y, x+SIZE, y+SIZE);}
     if(walls[2]){line(x+SIZE, y+SIZE, x, y+SIZE);}
     if(walls[3]){line(x, y+SIZE, x, y);}
     
-    //if(dead){
-    //    fill(0,0,0,100);
-    //    noStroke();
-    //    rect(x,y,SIZE,SIZE);
-    //}else 
+    if(dead){
+        fill(0,0,0,100);
+        noStroke();
+        rect(x,y,SIZE,SIZE);
+    }else 
     if(sol){
       fill(17,46,214,100);
       noStroke();
